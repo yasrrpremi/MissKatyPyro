@@ -743,7 +743,7 @@ async def imdb_inl(_, query):
                 res_str += "\n"
             if ott != "":
                 res_str += f"Available On:\n{ott}\n"
-            res_str += "<b>©️ IMDb by</b> @MissKatyRoBot"
+            # res_str += "<b>©️ IMDb by</b> @MissKatyRoBot"
             if r_json.get("trailer"):
                 trailer_url = r_json["trailer"]["url"]
                 markup = InlineKeyboardMarkup(
