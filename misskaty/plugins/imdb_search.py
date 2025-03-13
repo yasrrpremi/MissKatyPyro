@@ -500,7 +500,7 @@ async def imdb_id_callback(self: Client, query: CallbackQuery):
                 res_str += "\n"
             if ott != "":
                 res_str += f"Tersedia di:\n{ott}\n"
-            res_str += f"<b>©️ IMDb by</b> @{self.me.username}"
+            # res_str += f"<b>©️ IMDb by</b> @{self.me.username}"
             if trailer := r_json.get("trailer"):
                 trailer_url = trailer["url"]
                 markup = InlineKeyboardMarkup(
@@ -677,7 +677,7 @@ async def imdb_en_callback(self: Client, query: CallbackQuery):
                 res_str += "\n"
             if ott != "":
                 res_str += f"Available On:\n{ott}\n"
-            res_str += f"<b>©️ IMDb by</b> @{self.me.username}"
+            # res_str += f"<b>©️ IMDb by</b> @{self.me.username}"
             if trailer := r_json.get("trailer"):
                 trailer_url = trailer["url"]
                 markup = InlineKeyboardMarkup(
